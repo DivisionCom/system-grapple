@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuFragment">
 
+    <Button
+        android:id="@+id/btn_setWallpaper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Set Wallpaper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_test1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="<In development...>"
+        app:layout_constraintEnd_toEndOf="@+id/btn_setWallpaper"
+        app:layout_constraintStart_toStartOf="@+id/btn_setWallpaper"
+        app:layout_constraintTop_toBottomOf="@+id/btn_setWallpaper" />
+
+    <Button
+        android:id="@+id/btn_test2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="<In development...>"
+        app:layout_constraintEnd_toEndOf="@+id/btn_test1"
+        app:layout_constraintStart_toStartOf="@+id/btn_test1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_test1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
