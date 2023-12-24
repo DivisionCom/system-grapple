@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.placeHolder, MainFragment.newInstance())
+            .replace(R.id.placeHolder, MenuFragment.newInstance())
             .commit()
     }
 }

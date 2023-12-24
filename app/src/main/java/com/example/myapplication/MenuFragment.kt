@@ -1,25 +1,25 @@
 package com.example.myapplication
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.myapplication.databinding.FragmentMainBinding
+import androidx.fragment.app.Fragment
+import com.example.myapplication.databinding.FragmentMenuBinding
 
-class MainFragment : Fragment() {
-    private lateinit var binding: FragmentMainBinding
+class MenuFragment : Fragment() {
+    private lateinit var binding: FragmentMenuBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMainBinding.inflate(inflater, container, false)
+        binding = FragmentMenuBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     companion object {
         @JvmStatic
-        fun newInstance() = MainFragment()
+        fun newInstance() = MenuFragment()
     }
 }
